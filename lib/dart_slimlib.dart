@@ -1,13 +1,15 @@
 @JS()
 library dart_slimlib;
 
+import 'dart:html';
 import 'dart:js';
 import 'dart:convert';
 import 'package:js/js.dart';
+import 'package:js/js_util.dart' as jsUtil;
 export 'package:js/js.dart' show allowInterop;
 
 @JS('SlimView.Config')
-class Config {
+abstract class Config {
 
   external factory Config();
 
@@ -31,9 +33,9 @@ class Config {
 
   external set projectCode(String projectCode);
 
-  external JsObject get extra;
+  external JSObject get extra;
 
-  external set extra(JsObject extraParams);
+  external set extra(JSObject extraParams);
 }
 
 @JS('SlimView.Channel')
@@ -42,7 +44,7 @@ class Channel {
 
   external Config get config;
 
-  external JsObject get window;
+  external WindowBase get window;
 
   external void openInNewWindow();
 
@@ -70,4 +72,4 @@ typedef ErrorCallback(message);
 
 Map unboxMessage(JsObject obj) => JSON.decode(_encode(obj));
 
-box(Map<String, String> map) => new JsObject.jsify(map);
+box(Map<String, String> map) => jsUtil.jsify(map);
