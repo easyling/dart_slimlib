@@ -17,5 +17,5 @@ dependencies:
 It is also required that the appropriate version of Slimlib is included. Eg:
 
 ```html
-<script src="https://cdn.rawgit.com/easyling/slimlib/v0.0.2/dist/slimlib.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/easyling/slimlib@v0.0.2/dist/slimlib.js"></script>
 ```
