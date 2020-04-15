@@ -11,11 +11,11 @@ dependencies:
   dart_slimlib:
     git:
       url: https://github.com/easyling/dart_slimlib
-      ref: v0.0.2
+      ref: v0.1.0
 ```
 
 It is also required that the appropriate version of Slimlib is included. Eg:
 
 ```html
-<script src="https://cdn.jsdelivr.net/gh/easyling/slimlib@v0.0.2/dist/slimlib.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/easyling/slimlib@v0.1.0/dist/slimlib.js"></script>
 ```
