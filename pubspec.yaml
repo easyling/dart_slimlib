@@ -1,6 +1,6 @@
 name: dart_slimlib
 description: Interop package for Easyling's Slimlib
-version: 0.1.1
+version: 0.1.2
 author: Daniel Varga-Hali <dvarga@skawa.hu>
 environment:
   sdk: '>=2.0.0 <3.0.0'

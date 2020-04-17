@@ -8,6 +8,8 @@ import 'dart:js';
 import 'package:js/js.dart';
 import 'package:js/js_util.dart' as jsUtil;
 
+export 'package:js/js.dart' show allowInterop;
+
 @JS('SlimView.Config')
 abstract class Config {
   external factory Config();
