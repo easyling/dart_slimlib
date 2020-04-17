@@ -11,7 +11,7 @@ dependencies:
   dart_slimlib:
     git:
       url: https://github.com/easyling/dart_slimlib
-      ref: v0.1.0
+      ref: v0.1.1
 ```
 
 It is also required that the appropriate version of Slimlib is included. Eg:

@@ -8,8 +8,6 @@ import 'dart:js';
 import 'package:js/js.dart';
 import 'package:js/js_util.dart' as jsUtil;
 
-export 'package:js/js.dart' show allowInterop;
-
 @JS('SlimView.Config')
 abstract class Config {
   external factory Config();
@@ -71,6 +69,6 @@ external String _encode(obj);
 
 typedef ErrorCallback(message);
 
-Map unboxMessage(JsObject obj) => json.decode(_encode(obj));
+Map<String, dynamic> unboxMessage(obj) => json.decode(_encode(obj));
 
 box(Map<String, String> map) => jsUtil.jsify(map);
