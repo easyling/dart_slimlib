@@ -3,7 +3,6 @@ library dart_slimlib;
 
 import 'dart:convert';
 import 'dart:html';
-import 'dart:js';
 
 import 'package:js/js.dart';
 import 'package:js/js_util.dart' as jsUtil;
@@ -34,9 +33,10 @@ abstract class Config {
 
   external set projectCode(String projectCode);
 
-  external JsObject get extra;
+  external Object get extra;
 
-  external set extra(JsObject extraParams);
+  /// [extraParams] must be boxed with [box]
+  external set extra(Object extraParams);
 }
 
 @JS('SlimView.Channel')
